@@ -3,10 +3,15 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "start": "bun index.ts",
+    "dev": "bun --watch index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.1"
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9"
   },
   "peerDependencies": {
     "typescript": "^5"
@@ -15,6 +20,7 @@
     "@repo/db": "*",
     "@repo/redis": "*",
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
   }
 }
